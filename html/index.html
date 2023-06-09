@@ -5,33 +5,54 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora</title>
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-    <div class="calculator">
-        <input type="text" id="result" readonly>
-        <div class="btn-row">
-          <button class="btn" onclick="appendToResult('7')">7</button>
-          <button class="btn" onclick="appendToResult('8')">8</button>
-          <button class="btn" onclick="appendToResult('9')">9</button>
-          <button class="btn" onclick="appendToResult('/')">/</button>
-        </div>
-        <div class="btn-row">
-          <button class="btn" onclick="appendToResult('4')">4</button>
-          <button class="btn" onclick="appendToResult('5')">5</button>
-          <button class="btn" onclick="appendToResult('6')">6</button>
-          <button class="btn" onclick="appendToResult('*')">*</button>
-        </div>
-        <div class="btn-row">
-          <button class="btn" onclick="appendToResult('1')">1</button>
-          <button class="btn" onclick="appendToResult('2')">2</button>
-          <button class="btn" onclick="appendToResult('3')">3</button>
-          <button class="btn" onclick="appendToResult('-')">-</button>
-        </div>
-        <div class="btn-row">
-          <button class="btn" onclick="appendToResult('0')">0</button>
-          <button class="btn" onclick="appendToResult('.')">.</button>
-          <button class="btn" onclick="clearResult()">C</button>
-          <button class="btn btn-equal" onclick="calculateResult()">=</button>
+    <div class="calculator card">
+
+        <input type="text" class="calculator-screen z-depth-1" value="" disabled />
+      
+        <div class="calculator-keys">
+
+            <button type="button" class="operator btn btn-info" value="(">(</button>
+          <button type="button" class="operator btn btn-info" value=")">)</button>
+
+          <button type="button" class="operator btn btn-info" value="cos">cos</button>
+          <button type="button" class="operator btn btn-info" value="sin">sin</button>
+          <button type="button" class="operator btn btn-info" value="tan">tan</button>
+          <button type="button" class="operator btn btn-info" value="ln">ln</button>
+
+          <button type="button" class="operator btn btn-info" value="x²">x²</button>
+          <button type="button" class="operator btn btn-info" value="x³">x³</button>
+          <button type="button" class="operator btn btn-info" value="sqrt">√</button>
+          <button type="button" class="operator btn btn-info" value="sqrt_3">∛</button>
+      
+          <button type="button" class="operator btn btn-info" value="+">+</button>
+          <button type="button" class="operator btn btn-info" value="-">-</button>
+          <button type="button" class="operator btn btn-info" value="*">&times;</button>
+          <button type="button" class="operator btn btn-info" value="/">&divide;</button>
+      
+          <button type="button" value="7" class="btn btn-light waves-effect">9</button>
+          <button type="button" value="8" class="btn btn-light waves-effect">8</button>
+          <button type="button" value="9" class="btn btn-light waves-effect">7</button>
+      
+      
+          <button type="button" value="4" class="btn btn-light waves-effect">6</button>
+          <button type="button" value="5" class="btn btn-light waves-effect">5</button>
+          <button type="button" value="6" class="btn btn-light waves-effect">4</button>
+      
+      
+          <button type="button" value="1" class="btn btn-light waves-effect">3</button>
+          <button type="button" value="2" class="btn btn-light waves-effect">2</button>
+          <button type="button" value="3" class="btn btn-light waves-effect">1</button>
+      
+      
+          <button type="button" value="0" class="btn btn-light waves-effect">0</button>
+          <button type="button" class="decimal function btn btn-secondary" value=".">.</button>
+          <button type="button" class="all-clear function btn btn-danger btn-sm" value="all-clear">AC</button>
+      
+          <button type="button" class="equal-sign operator btn btn-default" value="=">=</button>
+      
         </div>
       </div>
 </body>
