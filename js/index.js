@@ -57,7 +57,9 @@ const calculator = {
       'ln': (value) =>Math.log(value),
       'sqrt_3': (value) =>Math.pow(value,1/3),
       'sqrt': (value) =>Math.pow(value,1/2),
-  }
+       'pow_3':(value) =>Math.pow(value,3),
+       'pow_2': (value) =>Math.pow(value,2)
+}
   
   const performCalculation = {
     '/': (firstOperand, secondOperand) => firstOperand / secondOperand,
@@ -115,4 +117,4 @@ const calculator = {
   });
 
   const  isScientificOperation =(op) => op==='cos' || op==='sin' || op==='tan' || op==='ln'
-      || op==='sqrt_3' || op==='sqrt'
+      || op==='sqrt_3' || op==='sqrt' || op==='pow_3' || op==='pow_2'
