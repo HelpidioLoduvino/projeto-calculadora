@@ -54,7 +54,9 @@ const calculator = {
       'cos': (value) =>Math.cos(value),
       'sin': (value) =>Math.sin(value),
       'tan': (value) =>Math.tan(value),
-      'ln': (value) =>Math.log(value)
+      'ln': (value) =>Math.log(value),
+      'sqrt_3': (value) =>Math.pow(value,1/3),
+      'sqrt': (value) =>Math.pow(value,1/2),
   }
   
   const performCalculation = {
@@ -113,3 +115,4 @@ const calculator = {
   });
 
   const  isScientificOperation =(op) => op==='cos' || op==='sin' || op==='tan' || op==='ln'
+      || op==='sqrt_3' || op==='sqrt'
