@@ -27,7 +27,7 @@ const calculator = {
   function handleOperator(nextOperator) {
     const { firstOperand, displayValue, operator } = calculator
     const inputValue = parseFloat(displayValue);
-
+    
     if (operator && calculator.waitingForSecondOperand)  {
       calculator.operator = nextOperator;
       return;
@@ -50,7 +50,8 @@ const calculator = {
   }
 
   const performScientificCalculation={
-      'cos': (value) =>Math.cos(value)
+      'cos': (value) =>Math.cos(value),
+      'sin': (value) =>Math.sin(value)
   }
   
   const performCalculation = {
@@ -108,4 +109,4 @@ const calculator = {
     updateDisplay();
   });
 
-  const  isScientificOperation =(op) => op==='cos'
+  const  isScientificOperation =(op) => op==='cos' || op==='sin'
