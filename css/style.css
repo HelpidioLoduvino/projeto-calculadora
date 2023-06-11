@@ -49,3 +49,10 @@ button {
   grid-gap: 20px;
   padding: 20px;
 }
+
+.history{
+  background-color:silver;
+  width: 200px;
+  height: 200px;
+  transition: vertical;
+}
