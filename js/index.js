@@ -44,6 +44,7 @@ const calculator = {
   
       calculator.displayValue = String(result);
       calculator.firstOperand = result;
+
     }
   
     calculator.waitingForSecondOperand = true;
@@ -115,6 +116,6 @@ const calculator = {
     inputDigit(target.value);
     updateDisplay();
   });
-
+  
   const  isScientificOperation =(op) => op==='cos' || op==='sin' || op==='tan' || op==='ln'
       || op==='sqrt_3' || op==='sqrt' || op==='pow_3' || op==='pow_2'
